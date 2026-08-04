@@ -105,15 +105,29 @@
 #         print("Unknow animal:  ")
 
 # Login role 
-a = input("Employee type: ")
+# a = input("Employee type: ")
+# match a:
+#     case "admin":
+#         print(f"{a} --> Full Access")
+#     case "manager":
+#         print(f"{a} --> Limited Access")
+#     case "employee":
+#         print(f"{a} --> Basic Access")
+#     case "guest":
+#         print(f"{a} --> Read Only")
+#     case _:
+#         print("Role not recognized")
+
+# Weather Advice
+a = input("What is the weather like today:  ")
 match a:
-    case "admin":
-        print(f"{a} --> Full Access")
-    case "manager":
-        print(f"{a} --> Limited Access")
-    case "employee":
-        print(f"{a} --> Basic Access")
-    case "guest":
-        print(f"{a} --> Read Only")
+    case "sunny":
+        print(f"{a}  --> Wear sunglassess")
+    case "rainy":
+        print(f"{a}   --> Take an umbrella")
+    case "snowy":
+        print(f"{a}   --> Wear a jacket")
+    case "windy":
+        print(f"{a}   --> Hold your hat")
     case _:
-        print("Role not recognized")
+        print("No advice available: ")
