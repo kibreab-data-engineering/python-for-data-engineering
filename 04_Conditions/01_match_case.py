@@ -78,14 +78,42 @@
 #     case _:
 #         print("Unknown signal")
 
-# Simple menu
-a = int(input("Enter menu: "))
+# # Simple menu
+# a = int(input("Enter menu: "))
+# match a:
+#     case 1:
+#         print(f"{a} --> Opening profile....")
+#     case 2:
+#         print(f"{a} --> Openong Settings...")
+#     case 3:
+#         print(f"{a} --> Logginh out     ...")
+#     case _:
+#         print("Invalid choice")
+
+# Animal Sounds 
+# a = input("Choose animal: ")
+# match a:
+#     case "Dog":
+#         print(f"{a} --> woof")
+#     case "Cat":
+#         print(f"{a}  --> Meow")
+#     case "Cow":
+#         print(f"{a}  --> Moo")
+#     case "Lion":
+#         print(f"{a}  --> Roar")
+#     case _:
+#         print("Unknow animal:  ")
+
+# Login role 
+a = input("Employee type: ")
 match a:
-    case 1:
-        print(f"{a} --> Opening profile....")
-    case 2:
-        print(f"{a} --> Openong Settings...")
-    case 3:
-        print(f"{a} --> Logginh out     ...")
+    case "admin":
+        print(f"{a} --> Full Access")
+    case "manager":
+        print(f"{a} --> Limited Access")
+    case "employee":
+        print(f"{a} --> Basic Access")
+    case "guest":
+        print(f"{a} --> Read Only")
     case _:
-        print("Invalid choice")
+        print("Role not recognized")
